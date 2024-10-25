@@ -1,0 +1,341 @@
+<app-top-menu></app-top-menu>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <div class="page-table">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="pt-3 pb-3">
+              <h1 class="site-font head-1">
+                Adapter Design Pattern
+              </h1>
+              <div class="landing-sub-heading">
+                <span class="head-3">Structural design pattern.</span>
+              </div>
+              <div class="mt-4">
+                <button class="btn" (click)="coreService.scrollToStart()">
+                  <fa-icon [icon]="['fas', 'info']"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="page-start">
+  <div class="container">
+    <div class="row text-center bg-sec pt-3 pb-3">
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <h2 class="site-font head-2 pt-4">Purpose:</h2>
+                <div>
+                  The purpose of this pattern is to allow incompatible interfaces to work together.
+                </div>
+                <div>
+                  <i>ie: act as a bridge by converting one interface into another.</i>
+                </div>
+                <div class="full-width pt-3">
+                  This is useful when extending parts of a system.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3">current functionality</h4>
+                </div>
+                <h1 class="site-font mt-1 head-1">+</h1>
+                <div class="class-card bg-pri text-center p-2 pb-1">
+                  <h4 class="site-font head-3">adapter</h4>
+                </div>
+                <h1 class="site-font mt-1 head-1">=</h1>
+                <div class="class-card bg-pri text-center p-2 pb-1">
+                  <h4 class="site-font head-3">desired functionality</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="not-so-nerds">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <div class="site-font head-2 mt-5">For the <b class="head-1"><u>not so</u></b> nerds:</div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="site-font head-3 mt-5">Current Functionality</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Input</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Policy Holder Name</b><br />
+          <b>Policy Type</b><br />
+        </div>
+      </div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Output</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Policy Holder Name</b> <br />
+          <b>Policy Type</b> <br />
+          <b>Fee</b> <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="site-font head-3 mt-5">Desired Functionality</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Input</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <i>As per current functionality:</i><br />
+          <b>Policy Holder Name</b> <br />
+          <b>Policy Type</b> <br />
+          <i>Extended functionality:</i><br />
+          <b>Family Members</b>
+        </div>
+      </div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Output</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <i>As per current functionality:</i><br />
+          <b>Policy Holder Name</b> <br />
+          <b>Policy Type</b> <br />
+          <b>Fee</b> <i> (this is now the fee for the whole family)</i><br />
+          <i>Extended functionality:</i><br />
+          <b>Family Members</b> <br />
+          <b>Base Fee</b>  <i> (per family member)</i><br />
+          <b>Policy Fee Discount</b> <i> (% per family member)</i><br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="nerds">
+  <div class="container text-center">
+    <div class="row bg-sec">
+      <div class="col-md-12">
+        <div class="site-font head-2 mt-5">For the <b class="head-1"><u>nerds</u></b> =)</div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Base Class</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">PolicyFee</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <b>string</b> PolicyHolderName<br />
+            <b>string</b> PolicyType<br />
+            <b>decimal</b> Fee<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Interface</div>
+        <div><i>this is the blueprint for the desired functionality</i></div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">IPolicyFeeAdapter</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <b>string</b> PolicyHolderName<br />
+            <b>string</b> PolicyType<br />
+            <b>decimal</b> Fee<br />
+            <b>decimal</b> BaseFee<br />
+            <b>int</b> FamilyMembers<br />
+            <b>decimal</b> PolicyFeeDiscount<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Adapter</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">PolicyFeeAdapter : IPolicyFeeAdapter</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <b>string</b> PolicyHolderName<br />
+            <b>string</b> PolicyType<br />
+            <b>decimal</b> Fee<br /><br />
+            <i>Extended functionality</i><br /><br />
+            private <b>PolicyFee</b> _individualPolicyFee<br /><br />
+            <b>constructor</b>(<b>PolicyFee</b> model) => _individualPolicyFee = model<br /><br />
+            <b>decimal</b> BaseFee<br />
+            <b>int</b> FamilyMembers<br />
+            <b>decimal</b> PolicyFeeDiscount<br />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">How this works</div>
+        <div class="mt-4 mb-5">
+          <div>
+            <i>Adapter classes implement an interface. Interfaces define the desired functionality of the adapter. Interfaces allow for multiple adapter classes to be created - extending the system to allow for implementations to be done in a consistent manner.</i>
+          </div>
+          <div class="mt-3"><b>_individualPolicyFee</b> is a private instance of the base class. It is instantiated when the first intance of the base class is injected into the adapter's constructor.</div>
+          <div class="mt-3"><b>PolicyHolderName</b> => returns _individualPolicyFee.PolicyHolderName</div>
+          <div class="mt-3"><b>PolicyType</b> => returns _individualPolicyFee.PolicyType</div>
+          <div class="mt-3"><b>FamilyMembers</b> => this is set when the adapter class is instantiated</div>
+          <div class="mt-3"><b>PolicyFeeDiscount</b> => the adapter class decides this based on the FamilyMembers value</div>
+          <div class="mt-3"><b>BaseFee</b> => this is calculated based on the _individualPolicyFee.Fee - PolicyFeeDiscount</div>
+          <div class="mt-3"><b>Fee</b> => this is calculated based on the BaseFee * FamilyMembers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center pt-5" id="example">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h4 class="site-font head-2">Demo.</h4>
+      <div class="mb-3">
+        <div>
+          <b>
+            We have a quoting system that currently caters for fees for a policy.
+          </b>
+        </div>
+        <div>
+          The system initially would quote on a single member, but has been extended to display to the user what their fees will be eif they bring their whole family on board.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 mt-5">
+      <div class="normal-table tall-table">
+        <div class="table-row">
+          <div class="table-cell table-cell-heading">
+            <div class="site-font head-3">How it works:</div>
+          </div>
+          <div class="table-cell">
+            <div class="bg-sec comment-card p-5 text-center">
+              <div class="head-4 pb-3">
+                <i>Understand the rules of what happens to the fees and discounts when multiple members are added to a policy, and create an adapter class to do the rest.</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center pt-5 pb-5">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Enter your information:</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <div class="pt-3">
+            <div>
+              <label><b>Policy Holder Name</b></label>
+            </div>
+            <div>
+              <input type="text" [(ngModel)]="policyHolderName" placeholder="Policy Holder Name" class="form-control">
+            </div>
+          </div>
+          <div class="pt-3">
+            <div>
+              <label><b>Policy Type</b></label>
+            </div>
+            <div>
+              <select type="text" [(ngModel)]="selectedPolicy" class="form-control">
+                <option *ngFor="let option of availablePolicies" [ngValue]="option">{{option.policyType}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="pt-3">
+            <div>
+              <button type="button" (click)="getPolicyInformation()" class="btn">Get Quotes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="policyQuotes != null && policyQuotes.length > 0">
+    <div class="col-sm-12">
+      <h4 class="site-font">Available Quotes:</h4>
+    </div>
+    <div class="col-sm-4">
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">{{policyQuotes[0].PolicyHolderName}}</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <table width="100%">
+            <tr>
+              <td><b>Policy Type</b></td>
+              <td align="right">{{policyQuotes[0].PolicyType}}</td>
+            </tr>
+            <tr>
+              <td><b>Base Fee</b></td>
+              <td align="right">R{{policyQuotes[0].BaseFee | number:'1.2-2'}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" *ngFor="let quote of policyQuotes">
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 text-center">
+          <div class="site-font"><b>{{quote.FamilyMembers}} Family Members</b></div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <table width="100%">
+            <tr>
+              <td><b>Family Fee</b></td>
+              <td align="right">R{{quote.BaseFee * quote.FamilyMembers | number:'1.2-2'}}</td>
+            </tr>
+            <tr>
+              <td><b>Discount %</b></td>
+              <td align="right">{{quote.PolicyFeeDiscount | number:'1.2-2'}}</td>
+            </tr>
+            <tr>
+              <td><b>Final Fee</b></td>
+              <td align="right">R{{quote.Fee | number:'1.2-2'}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

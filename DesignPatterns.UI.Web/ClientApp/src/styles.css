@@ -1,0 +1,489 @@
+body {
+    color: #000;
+}
+
+@font-face {
+  font-family: 'SiteFont';
+  src: url('/assets/fonts/gunplay rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.site-font {
+  font-family: 'SiteFont', sans-serif;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.page-container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.normal-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.tall-table {
+  height: 100%;
+}
+
+.table-row {
+  display: flex;
+  flex: 1;
+}
+
+.table-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-cell-top {
+  align-items: start;
+}
+
+.table-cell-heading {
+    flex: 0.5;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.graf-bg {
+    background-color: #000;
+    color: #FFF;
+    background-image: url('assets/images/Design_Patterns_Graffiti.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 600px auto;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: 2px solid;
+    font-size: 16px;
+}
+.btn_sm {
+  padding: 5px;
+  border: 2px solid;
+  font-size: 14px;
+  border-radius: 50%;
+  margin: 3px;
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+}
+.btn_white_black_bg {
+    border-color: #000;
+    background-color: #FFF;
+    color: #000;
+}
+
+.btn_white_black_bg:hover {
+  color: #FFF;
+  background-color: #000;
+  border-color:#FFF;
+}
+
+.btn_black_white_bg {
+  color: #FFF;
+  background-color: #000;
+  border-color:#000;
+}
+
+.btn_black_white_bg:hover {
+  border-color: #000;
+  background-color: #FFF;
+  color: #000;
+}
+
+.bold-red {
+    font-weight: bold;
+    color: #F00;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.full-width {
+    display: block;
+    width: 100%;
+}
+
+
+
+.info-card {
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #FFF;
+}
+
+.class-card {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #FFF;
+  margin: 0px auto;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.class-card.bg-sec {
+    border-color: #000;
+}
+
+.comment-card {
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.bg-pri {
+  color: #000;
+  background-color: #FFF;
+}
+
+.bg-sec {
+  color: #FFF;
+  background-color: #000;
+}
+
+.bg-ter {
+  color: #000;
+  background-color: #F00;
+}
+
+.txt-pri {
+  color: #FFF;
+}
+
+.txt-sec {
+  color: #000;
+}
+
+.txt-ter {
+  color: #F00;
+}
+
+.head-1 {
+    font-size: 3rem;
+}
+
+.head-2 {
+  font-size: 2rem;
+}
+
+.head-3 {
+  font-size: 1.5rem;
+}
+
+.head-4 {
+  font-size: 1.25rem;
+}
+
+.sticky-bottom {
+  position: sticky;
+  top: 0px;
+  /*bottom: 0px;*/
+}
+
+.bridge-window {
+  position: relative;
+  display: block;
+  width: 700px;
+  height: 500px;
+  margin: 10px auto;
+  /* border: 15px solid #FFF; */
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+  background: url('assets/images/view.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.bridge-overlay {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('assets/images/frame.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* background-color: rgba(137, 207, 240, 0.4);
+  box-shadow: inset 0px 0px 15px rgba(0,0,0,1); */
+}
+
+.bridge-mobile {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 500px;
+  margin: 10px auto;
+  padding: 80px 32px 15px ;
+  /* background-color: red;
+  border: 5px solid #000;
+  box-shadow: 3px 3px 3px rgab(0,0,0,0.4);
+  border-radius: 5px; */
+  background: url('assets/images/iphone.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bridge-mobile img {
+  max-width: 60%;
+}
+
+.bridge-washer {
+  width: 100%;
+  height: 25px;
+  background-color: #4a90e2;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3),
+              0 -5px 10px rgba(255, 255, 255, 0.2) inset;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bridge-washer span {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3),
+              0 -5px 10px rgba(255, 255, 255, 0.2) inset;
+}
+
+.bridge-washer-control {
+  color: #FFF;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3),
+              0 10px 20px rgba(0, 0, 0, 0.2) inset;
+  position: relative;
+  margin: 10px auto;
+  display: inline-block;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bridge-btn {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px #2c5a99;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+}
+
+.bridge-btn:active {
+  box-shadow: 0 2px #2c5a99;
+  transform: translateY(3px);
+}
+
+
+.decorator-pos {
+  position: relative;
+  height: 100vh;
+}
+
+.decorator-holder {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.decorator-height {
+  height: 60vh;
+}
+
+.decorator-top-holder,
+.decorator-bottom-holder {
+  display: table-row;
+}
+
+.decorator-column-holder {
+  display: table-cell;
+  padding: 10px;
+  border: 5px solid #000;
+}
+
+.decorator-column-holder fa-icon {
+  cursor: pointer;
+}
+
+.decorator-bottom-holder {
+  height: 60px;
+}
+
+.drop-bottom {
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.drop-bottom fa-icon {
+  font-size: 35px;
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  padding: 5px 0px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  margin: 5px;
+  color: #FFF;
+  background-color: #000;
+  transition: background-color 0.5s ease;
+}
+
+.drop-bottom fa-icon:hover {
+  color: #000;
+  background-color: #FFF;
+}
+
+.decorators .decorator-bottom-holder {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.decorators .decorator-bottom-holder:hover {
+  color: #FFF;
+  background-color: #000;
+}
+
+.decorators .decorator-bottom-holder.bg-sec:hover {
+  color: #F00;
+  background-color: #FFF;
+}
+
+.decorators .decorator-bottom-holder.bg-ter:hover {
+  color: #F00;
+  background-color: #000;
+}
+
+.demo-display {
+  height: 100vh;
+}
+
+.bridge-display {
+  /* background-image: url('assets/images/wall.jpg'); */
+  background-repeat: no-repeat;
+  background-position: top center; 
+  background-size: cover;
+}
+
+.mobile-btn {
+  padding: 5px 12px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+.mobile-list-item {
+  border: 2px solid #000;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.command-holder {
+  display: inline-block;
+  padding: 15px;
+  width: 200px;
+}
+
+.command-holder img {
+  max-width: 100%;
+}
+
+.command-holder .orange {
+  background-color: orange;
+}
+
+.command-holder .brown {
+  background-color: brown;
+}
+
+.command-holder .indigo {
+  background-color: indigo;
+}
+
+.command-holder .yellow {
+  background-color: yellow;
+}
+
+.command-holder .blue {
+  background-color: blue;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+}
+
+.rotating-div {
+  animation: rotate 2s linear infinite;
+}

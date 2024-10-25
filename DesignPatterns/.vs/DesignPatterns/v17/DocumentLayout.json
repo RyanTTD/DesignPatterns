@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2707C46-0CD4-4474-8E9C-EC73F617C236}|..\\DesignPatterns.AdapterPattern\\DesignPatterns.AdapterPattern.csproj|c:\\clients\\ttd\\projects\\patterns\\designpatterns.adapterpattern\\models\\policyfeeadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AB8B8-FF20-41F3-AAAF-F22FBCEAE691}|..\\DesignPatterns.BridgePattern\\DesignPatterns.BridgePattern.csproj|c:\\clients\\ttd\\projects\\patterns\\designpatterns.bridgepattern\\models\\mobilewasherremote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AB8B8-FF20-41F3-AAAF-F22FBCEAE691}|..\\DesignPatterns.BridgePattern\\DesignPatterns.BridgePattern.csproj|c:\\clients\\ttd\\projects\\patterns\\designpatterns.bridgepattern\\models\\washerremote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AB8B8-FF20-41F3-AAAF-F22FBCEAE691}|..\\DesignPatterns.BridgePattern\\DesignPatterns.BridgePattern.csproj|c:\\clients\\ttd\\projects\\patterns\\designpatterns.bridgepattern\\models\\windowwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174AB8B8-FF20-41F3-AAAF-F22FBCEAE691}|..\\DesignPatterns.BridgePattern\\DesignPatterns.BridgePattern.csproj|c:\\clients\\ttd\\projects\\patterns\\designpatterns.bridgepattern\\interfaces\\iwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 346,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PolicyFeeAdapter.cs",
+              "DocumentMoniker": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.AdapterPattern\\Models\\PolicyFeeAdapter.cs",
+              "RelativeDocumentMoniker": "..\\DesignPatterns.AdapterPattern\\Models\\PolicyFeeAdapter.cs",
+              "ToolTip": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.AdapterPattern\\Models\\PolicyFeeAdapter.cs",
+              "RelativeToolTip": "..\\DesignPatterns.AdapterPattern\\Models\\PolicyFeeAdapter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T06:52:44.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MobileWasherRemote.cs",
+              "DocumentMoniker": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\MobileWasherRemote.cs",
+              "RelativeDocumentMoniker": "..\\DesignPatterns.BridgePattern\\Models\\MobileWasherRemote.cs",
+              "ToolTip": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\MobileWasherRemote.cs",
+              "RelativeToolTip": "..\\DesignPatterns.BridgePattern\\Models\\MobileWasherRemote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:12:04.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WasherRemote.cs",
+              "DocumentMoniker": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\WasherRemote.cs",
+              "RelativeDocumentMoniker": "..\\DesignPatterns.BridgePattern\\Models\\WasherRemote.cs",
+              "ToolTip": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\WasherRemote.cs",
+              "RelativeToolTip": "..\\DesignPatterns.BridgePattern\\Models\\WasherRemote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:10:57.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowWasher.cs",
+              "DocumentMoniker": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\WindowWasher.cs",
+              "RelativeDocumentMoniker": "..\\DesignPatterns.BridgePattern\\Models\\WindowWasher.cs",
+              "ToolTip": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Models\\WindowWasher.cs",
+              "RelativeToolTip": "..\\DesignPatterns.BridgePattern\\Models\\WindowWasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:08:50.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWasher.cs",
+              "DocumentMoniker": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Interfaces\\IWasher.cs",
+              "RelativeDocumentMoniker": "..\\DesignPatterns.BridgePattern\\Interfaces\\IWasher.cs",
+              "ToolTip": "C:\\Clients\\TTD\\Projects\\Patterns\\DesignPatterns.BridgePattern\\Interfaces\\IWasher.cs",
+              "RelativeToolTip": "..\\DesignPatterns.BridgePattern\\Interfaces\\IWasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:07:28.983Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 346,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 346,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+<app-top-menu></app-top-menu>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <div class="page-table">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="pt-3 pb-3">
+              <h1 class="site-font head-1">
+                Bridge Design Pattern
+              </h1>
+              <div class="landing-sub-heading">
+                <span class="head-3">Structural design pattern.</span>
+              </div>
+              <div class="mt-4">
+                <button class="btn" (click)="coreService.scrollToStart()">
+                  <fa-icon [icon]="['fas', 'info']"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="page-start">
+  <div class="container">
+    <div class="row text-center bg-sec pt-3 pb-3">
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <h2 class="site-font head-2 pt-4">Purpose:</h2>
+                <div>
+                  The purpose of this pattern is to decouple an abstraction from its implementation.
+                </div>
+                <div>
+                  <i>ie: it allows them to vary independently.</i>
+                </div>
+                <div class="full-width pt-3">
+                  This is useful when wanting to avoid a permanent binding between an abstraction and its implementation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <div class="class-card bg-pri text-center p-2 mb-2">
+                  <h4 class="site-font head-3">implementor</h4>
+                </div>
+                <div class="class-card bg-pri text-center p-2 pb-1 mb-2">
+                  <h4 class="site-font head-3">concrete implementor</h4>
+                </div>
+                <div class="class-card bg-pri text-center p-2 mb-2">
+                  <h4 class="site-font head-3">abstraction</h4>
+                </div>
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3">refined abstraction</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="not-so-nerds">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <div class="site-font head-2 mt-5">For the <b class="head-1"><u>not so</u></b> nerds:</div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Implementor</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Blueprint</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Defines what this thing does.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Concrete Implementor</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Window Cleaner</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Physical device.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Abstraction</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Just...</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>... think of this as the basic idea that you want to achieve.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Refined Abstraction</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Mobile APP</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>The final outcome!!</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="nerds">
+  <div class="container text-center">
+    <div class="row bg-sec">
+      <div class="col-md-12">
+        <div class="site-font head-2 mt-5">For the <b class="head-1"><u>nerds</u></b> =)</div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="site-font head-3 mt-5">Implementor</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">IWasher</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>interface</i><br /><br />
+            <b>void</b> StartWashing()<br />
+            <b>void</b> StopWashing()<br />
+            <b>void</b> SetDirection(number)<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="site-font head-3 mt-5">Concrete Implementor</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">WindowWasher</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>inplements interface IWasher</i><br /><br />
+            <b>int</b> Direction<br />
+            <b>void</b> StartWashing()<br />
+            <b>void</b> StopWashing()<br />
+            <b>void</b> SetDirection(number)<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="site-font head-3 mt-5">Abstraction</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">WasherControl</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>abstract class</i><br /><br />
+            <b>protected</b> IWasher<br />
+            <b>constructor</b> WasherControl(IWasher)<br />
+            <b>void</b> StopStart<br />
+            <b>void</b> SetDirection<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="site-font head-3 mt-5">Refined Abstraction</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">MobileWasher</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>implements abstraction as base</i><br /><br />
+            <b>protected</b> IWasher<br />
+            <b>constructor</b> MobileWasher(IWasher)<br />
+            <b>void</b> StopStart()<br />
+            <b>void</b> SetDirection(number)<br />
+            <b>bool</b> Washing<br />
+            <b>int</b> Direction<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-pri demo-display bridge-display" id="example">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-8 offset-md-2">
+        <h4 class="site-font head-2 pt-5">Example.</h4>
+        <div class="mb-3">
+          <div class="mb-3">
+            <b>
+              You have a wifi powered Window Washer that goes up and down your window to clean it. There are buttons on the wall that can be pressed to turn the machine on or off, as well as a button to set the direction to up or down.
+            </b>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-12 mt-5">
+        <div class="normal-table tall-table">
+          <div class="table-row">
+            <div class="table-cell table-cell-heading">
+              <div class="site-font head-3">New Functionality:</div>
+            </div>
+            <div class="table-cell">
+              <div class="bg-sec comment-card p-5 text-center">
+                <div class="head-4 pb-3">
+                  <i><h4>Mobile App Display</h4></i>
+                </div>
+                <div>
+                  You would like to know when the Window Washer is busy running and what direction it is going. The state must be able to be viewed on an APP.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-12">
+        <h1 class="site-font head-1 mt-5 mb-5">Demo</h1>
+        <div class="mb-5">
+          Use the buttons <b>(concrete implementor)</b> or mobile app <b>(refined abstraction)</b> to test out the theory in action.
+        </div>
+      </div>
+  
+      <div class="col-sm-8" *ngIf="washer != null">
+        <div class="mb-2">
+          <div class="bridge-window">
+            <div class="bridge-washer" [ngStyle]="{'top.%': washer.position}">
+              <span>
+                Washer 1.0
+              </span>
+            </div>
+            <div class="bridge-overlay"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="bridge-washer-control">
+            <button (click)="washer.StartWashing()" class="m-1 bridge-btn"><fa-icon [icon]="['fas', 'play']"></fa-icon></button>
+            <button (click)="washer.StopWashing()" class="m-1 bridge-btn"><fa-icon [icon]="['fas', 'stop']"></fa-icon></button>
+            <button (click)="washer.SetDirection(-1)" class="m-1 bridge-btn"><fa-icon [icon]="['fas', 'chevron-up']"></fa-icon></button>
+            <button (click)="washer.SetDirection(1)" class="m-1 bridge-btn"><fa-icon [icon]="['fas', 'chevron-down']"></fa-icon></button>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-4" *ngIf="mobileWasher != null">
+        <div class="mb-2">
+          <div class="bridge-mobile text-left">
+            <div>
+              <img src="/assets/images/washer-logo.jpg">
+            </div>
+            <div class="mobile-list-item">
+              <table width="100%">
+                <tr>
+                  <td><b>Status:</b></td>
+                  <td class="text-right">
+                    <span class="">
+                      <fa-icon *ngIf="mobileWasher.isWashing == true" [icon]="['fas', 'play']"></fa-icon>
+                      <fa-icon *ngIf="mobileWasher.isWashing == false" [icon]="['fas', 'stop']"></fa-icon>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="mobile-list-item">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><b>Direction:</b></td>
+                  <td class="text-right">
+                    <span>
+                      <fa-icon *ngIf="mobileWasher.direction == -1" [icon]="['fas', 'chevron-up']"></fa-icon>
+                      <fa-icon *ngIf="mobileWasher.direction == 1" [icon]="['fas', 'chevron-down']"></fa-icon>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+  
+            <div class="mb-2 text-center mt-3">
+              <button class="m-1 mobile-btn" (click)="mobileWasher.StartStopWashing()">
+                <fa-icon *ngIf="!mobileWasher.isWashing" [icon]="['fas', 'play']"></fa-icon>
+                <fa-icon *ngIf="mobileWasher.isWashing" [icon]="['fas', 'stop']"></fa-icon>
+              </button>
+              <button class="m-1 mobile-btn" (click)="mobileWasher.SetDirection(-1)"><fa-icon [icon]="['fas', 'chevron-up']"></fa-icon></button>
+              <button class="m-1 mobile-btn" (click)="mobileWasher.SetDirection(1)"><fa-icon [icon]="['fas', 'chevron-down']"></fa-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="container text-center">
+  <div class="row">
+    <h4 class="site-font head-2 pt-5">For show.</h4>
+  </div>
+</div>-->

@@ -1,0 +1,82 @@
+<header>
+  <!--<nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">Design Patterns</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/counter']"
+              >Counter</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
+              >Fetch data</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+</header>
+
+<div class="slide-out-menu" [class.open]="coreService.menuOpen">
+  <button class="btn btn_white_black_bg menu-btn" (click)="coreService.openCloseMenu()">
+    <fa-icon [icon]="['fas', 'arrow-left']" *ngIf="coreService.menuOpen"></fa-icon>
+    <fa-icon [icon]="['fas', 'arrow-right']" *ngIf="!coreService.menuOpen"></fa-icon>
+  </button>
+  <nav>
+    <ul>
+      <li>
+        <a class="site-font head-3 p-1" routerLink="/" (click)="coreService.openCloseMenu()">
+          Home
+        </a>
+      </li>
+      <li>
+        <h4 class="site-font p-1">Design Patterns</h4>
+      </li>
+      <!--<li>
+        <h6 class="site-font p-1">Creational</h6>
+      </li>
+      <li><a routerLink="/home">Abstract</a></li>
+      <li><a routerLink="/about">Builder</a></li>
+      <li><a routerLink="/contact">Factory</a></li>
+      <li><a routerLink="/contact">Prototype</a></li>
+      <li><a routerLink="/contact">Singleton</a></li>-->
+      <li>
+        <h6 class="site-font p-1">Structural</h6>
+      </li>
+      <li><a routerLink="/designpatterns/structural/adapter" (click)="coreService.openCloseMenu()">Adapter</a></li>
+      <li><a routerLink="/designpatterns/structural/bridge" (click)="coreService.openCloseMenu()">Bridge</a></li>
+      <li><a routerLink="/designpatterns/structural/decorator" (click)="coreService.openCloseMenu()">Decorator</a></li>
+      <li>
+        <h6 class="site-font p-1">Behavioral</h6>
+      </li>
+      <li><a routerLink="/designpatterns/behavioral/command" (click)="coreService.openCloseMenu()">Command</a></li>
+      <!--<li><a routerLink="/home">Decorator</a></li>-->
+    </ul>
+  </nav>
+</div>

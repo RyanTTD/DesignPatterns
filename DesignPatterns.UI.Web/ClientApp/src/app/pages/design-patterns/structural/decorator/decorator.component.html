@@ -1,0 +1,347 @@
+<app-top-menu></app-top-menu>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <div class="page-table">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="pt-3 pb-3">
+              <h1 class="site-font head-1">
+                Decorator Design Pattern
+              </h1>
+              <div class="landing-sub-heading">
+                <span class="head-3">Structural design pattern.</span>
+              </div>
+              <div class="mt-4">
+                <button class="btn" (click)="coreService.scrollToStart()">
+                  <fa-icon [icon]="['fas', 'info']"></fa-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="page-start">
+  <div class="container">
+    <div class="row text-center bg-sec pt-3 pb-3">
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <h2 class="site-font head-2 pt-4">Purpose:</h2>
+                <div>
+                  The purpose of this pattern is to dynamically add behavior to an object without altering it's structure.
+                </div>
+                <div>
+                  <i>ie: it provides a flexible solution to sub classing.</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="normal-table tall-table pt-5 pb-5">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="pt-3 pb-3">
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3"><fa-icon [icon]="['fas', 'burger']"></fa-icon></h4>
+                </div>
+                <h1 class="site-font mt-1 head-3">+</h1>
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3"><fa-icon [icon]="['fas', 'ice-cream']"></fa-icon></h4>
+                </div>
+                <h1 class="site-font mt-1 head-3">=</h1>
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3">
+                    <fa-icon [icon]="['fas', 'burger']"></fa-icon>
+                    <fa-icon [icon]="['fas', 'ice-cream']"></fa-icon>
+                  </h4>
+                </div>
+                <h1 class="site-font mt-1 head-3">not</h1>
+                <div class="class-card bg-pri text-center p-2 mb-1">
+                  <h4 class="site-font head-3">
+                    <fa-icon [icon]="['fas', 'burger']"></fa-icon>
+                  </h4>
+                </div>
+                <div class="class-card bg-pri text-center p-2">
+                  <h4 class="site-font head-3">
+                    <fa-icon [icon]="['fas', 'ice-cream']"></fa-icon>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-5" id="not-so-nerds">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <div class="site-font head-2 mt-5">For the <b class="head-1"><u>not so</u></b> nerds:</div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Component Interface</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Blueprint</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Defines the structure of the patron that will then be decorated.</b>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <i>Key note:</i> We only define a blueprint here as all patrons can differ.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Concrete Component</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Patron</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>This is the actual patron that is declared.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Decorator</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Another Blueprint</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>Except this one defines the decorators that will act on the patron.</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="site-font head-3 mt-5">Concrete Decorators</div>
+
+      <div class="class-card bg-sec mt-4 mb-5">
+        <div class="bg-sec p-2 pt-3 pb-3 text-center">
+          <div class="site-font head-3">Burger</div>
+        </div>
+        <div class="bg-pri p-3 text-justify">
+          <b>We all know what happens here...</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-sec" id="nerds">
+  <div class="container text-center pb-5">
+    <div class="row bg-sec">
+      <div class="col-md-12">
+        <div class="site-font head-2 mt-5">For the <b class="head-1"><u>nerds</u></b> =)</div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Component Interface</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">IPatron</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>interface</i><br /><br />
+            <b>string</b> GetName()<br />
+            <b>string</b> GetOrder()<br />
+            <b>number</b> GetCost()<br />
+            <b>number</b> GetDiscount()<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Concrete Component</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">Patron</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>inplements interface IPatron</i><br /><br />
+            <b>private</b> Name<br />
+            <b>constructor</b> Patron(name) => this.Name = name<br />
+            <b>string</b> GetName() => return this.Name<br />
+            <b>string</b> GetOrder() => return ""<br />
+            <b>number</b> GetCost() => return 0<br />
+            <b>number</b> GetDiscount() => return 0<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Decorator</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">PatronDecorator</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>abstract class implements IPatron</i><br /><br />
+            <b>constructor</b> PatronDecorator(IPatron)<br />
+            <b>protected IPatron</b> patron<br />
+            <b>string</b> GetName() => return this.patron.GetName()<br />
+            <b>string</b> GetOrder() => return this.patron.GetOrder()<br />
+            <b>number</b> GetCost() => return this.patron.GetCost()<br />
+            <b>number</b> GetDiscount() => return this.patron.GetDiscount()<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="site-font head-3 mt-5">Concrete Decorators</div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">BurgerDecorator</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>implements decorator as base</i><br /><br />
+            <b>constructor</b> BurgerDecorator(IPatron) : base(IPatron)<br />
+            <b>string</b> GetName() => return base.GetName()<br />
+            <b>string</b> GetOrder() => return base.GetOrder() + "burger "<br />
+            <b>number</b> GetCost() => return base.GetCost() + 50<br />
+            <b>number</b> GetDiscount() => return base.GetDiscount()<br />
+          </div>
+        </div>
+
+        <div class="class-card mt-4 mb-5">
+          <div class="bg-sec p-2 pt-3 pb-3 text-center">
+            <div class="site-font head-3">DiscountDecorator</div>
+          </div>
+          <div class="bg-pri p-3 text-justify">
+            <i>implements decorator as base</i><br /><br />
+            <b>constructor</b> DiscountDecorator(IPatron) : base(IPatron)<br />
+            <b>string</b> GetName() => return base.GetName()<br />
+            <b>string</b> GetOrder() => return base.GetOrder()<br />
+            <b>number</b> GetCost() => return base.GetCost() * (90/100)<br />
+            <b>number</b> GetDiscount() => return base.GetDiscount() * (10/100)<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-pri decorator-pos" id="example">
+  <div class="container pt-5 pb-5">
+    <div class="row text-center">
+      <div class="col-sm-12 mt-2">
+        <div class="site-font head-1 mt-5">Demo</div>
+        <div>
+          Use the interface below to test out the theory in action.
+        </div>
+      </div>
+
+      <div class="col-sm-1 offset-sm-1 mt-4">
+        <div class="decorator-holder decorators">
+          <div class="decorator-bottom-holder" (click)="addBurger()">
+            <div class="decorator-column-holder">
+              <h1 class="head-2"><fa-icon [icon]="['fas', 'burger']"></fa-icon></h1>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder" (click)="addCookie()">
+            <div class="decorator-column-holder">
+              <h1 class="head-2"><fa-icon [icon]="['fas', 'cookie']"></fa-icon></h1>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder" (click)="addIceCream()">
+            <div class="decorator-column-holder">
+              <h1 class="head-2"><fa-icon [icon]="['fas', 'ice-cream']"></fa-icon></h1>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder" (click)="addCoffee()">
+            <div class="decorator-column-holder">
+              <h1 class="head-2"><fa-icon [icon]="['fas', 'mug-hot']"></fa-icon></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="decorator-holder decorators mt-5">
+          <div class="decorator-bottom-holder bg-pri" (click)="addDiscount()">
+            <div class="decorator-column-holder">
+              <h1 class="txt-ter head-2"><fa-icon [icon]="['fas', 'percent']"></fa-icon></h1>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder bg-sec" (click)="savePatron()">
+            <div class="decorator-column-holder">
+              <h1 class="head-2"><fa-icon [icon]="['fas', 'dollar-sign']"></fa-icon></h1>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder bg-ter" (click)="addPatron()">
+            <div class="decorator-column-holder">
+              <h1 class="head-1"><fa-icon [icon]="['fas', 'trash']"></fa-icon></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-sm-6 mt-4">
+        <div class="decorator-holder decorator-height" *ngIf="selectedPatron != null">
+          <div class="decorator-bottom-holder">
+            <div class="decorator-column-holder bg-sec">
+              <div class="site-font">{{selectedPatron.GetName()}}</div>
+              <h1 class="site-font">R {{selectedPatron.GetCost() | number:'1.2-2'}}</h1>
+              <h4 class="site-font" *ngIf="selectedPatron.GetDiscount() > 0">Discount: R {{selectedPatron.GetDiscount() | number:'1.2-2'}}</h4>
+            </div>
+          </div>
+          <div class="decorator-top-holder">
+            <div class="decorator-column-holder drop-bottom">
+              <ng-container *ngFor="let orderItem of selectedPatron.GetOrder().split(' ')">
+                <fa-icon class="{{orderItem}}" *ngIf="orderItem != ''" [icon]="['fas', orderItem]"></fa-icon>
+              </ng-container>
+              <div *ngIf="selectedPatron.GetOrder() == ''">
+                <h4 class="site-font">
+                  Tap some chows to get {{selectedPatron.GetName()}} a Quick Bite.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 mt-4">
+        <div class="decorator-holder">
+          <div class="decorator-bottom-holder">
+            <div class="decorator-column-holder bg-sec">
+              <div class="site-font">Total Sales</div>
+              <h1 class="site-font">R {{totalSales | number:'1.2-2'}}</h1>
+              <h4 class="site-font" *ngIf="totalDiscount > 0">Discount: R {{totalDiscount | number:'1.2-2'}}</h4>
+            </div>
+          </div>
+          <div class="decorator-bottom-holder" *ngFor="let patron of patrons">
+            <div class="decorator-column-holder">
+              <div>
+                <h4 class="site-font">{{patron.GetName()}}</h4>
+                <div class="site-font"><b>R {{patron.GetCost() | number:'1.2-2'}}</b></div>
+                <div class="site-font" *ngIf="patron.GetDiscount() > 0"><i>Discount: R {{patron.GetDiscount() | number:'1.2-2'}}</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
